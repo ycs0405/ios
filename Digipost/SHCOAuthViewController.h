@@ -19,6 +19,7 @@
 
 // Segue identifiers (to enable programmatic triggering of segues)
 extern NSString *const kPresentOAuthModallyIdentifier;
+extern NSString *const kPresentIDportenOAuthModallyIdentifier;
 
 @protocol SHCOAuthViewControllerDelegate;
 

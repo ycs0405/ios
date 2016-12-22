@@ -27,6 +27,7 @@
 
 // Segue identifiers (to enable programmatic triggering of segues)
 NSString *const kPresentOAuthModallyIdentifier = @"PresentOAuthModally";
+NSString *const kPresentIDportenOAuthModallyIdentifier = @"PresentIDportenOAuthModally";
 
 // Google Analytics screen name
 NSString *const kOAuthViewControllerScreenName = @"OAuth";

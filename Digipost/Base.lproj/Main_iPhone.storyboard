@@ -12,7 +12,7 @@
         <scene sceneID="cUi-kZ-frf">
             <objects>
                 <navigationController toolbarHidden="NO" id="rS3-R9-Ivy" customClass="POSNoRotationNavigationController" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="black" translucent="NO" id="yXu-0R-QUA">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="yXu-0R-QUA">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -33,8 +33,9 @@
         <scene sceneID="pCU-Bh-qnC">
             <objects>
                 <navigationController definesPresentationContext="YES" id="Mk0-2Z-lkG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Yei-Ha-tiR"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Z05-FO-2e6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Z05-FO-2e6">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -44,7 +45,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="On7-mx-Ra5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="276" y="-856"/>
+            <point key="canvasLocation" x="893" y="-746"/>
         </scene>
         <!--OAuth View Controller-->
         <scene sceneID="Pcj-pr-X4N">
@@ -90,7 +91,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKy-34-26r" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="jRh-L6-T4p" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="680" y="-856"/>
+            <point key="canvasLocation" x="1297" y="-746"/>
         </scene>
         <!--Folders View Controller-->
         <scene sceneID="Ige-oa-FSO">
@@ -714,7 +715,7 @@
             <objects>
                 <navigationController id="95z-FI-Of9" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="WWN-S0-ytr"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Uaa-Ss-oAC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Uaa-Ss-oAC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -831,7 +832,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="JBU-ne-Lr5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="JBU-ne-Lr5">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1255,7 +1256,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTu-hy-iNW" userLabel="Login Button">
                                         <color key="backgroundColor" red="0.8901960784313725" green="0.1764705882352941" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="260" id="RzA-H8-ORX"/>
                                             <constraint firstAttribute="height" constant="52" id="dVa-a9-1Ws"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
@@ -1273,7 +1273,7 @@
                                             <constraint firstAttribute="height" constant="74" id="Y2B-yh-dT6"/>
                                         </constraints>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qv1-h9-ci4">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qv1-h9-ci4" userLabel="Forgot password container">
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fv5-4n-dtY" userLabel="Register Button">
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -1323,7 +1323,6 @@
                                     <constraint firstItem="Qv1-h9-ci4" firstAttribute="centerX" secondItem="cSK-Bb-kQC" secondAttribute="centerX" constant="-0.5" id="X47-pC-sug"/>
                                     <constraint firstAttribute="trailing" secondItem="GTu-hy-iNW" secondAttribute="trailing" constant="30" id="a8s-Kr-Qur"/>
                                     <constraint firstItem="GTu-hy-iNW" firstAttribute="centerX" secondItem="cSK-Bb-kQC" secondAttribute="centerX" id="cVj-4D-L2d"/>
-                                    <constraint firstItem="Qv1-h9-ci4" firstAttribute="top" secondItem="GTu-hy-iNW" secondAttribute="bottom" constant="31" id="n2D-ko-mh7"/>
                                     <constraint firstItem="Qv1-h9-ci4" firstAttribute="trailing" secondItem="GTu-hy-iNW" secondAttribute="trailing" constant="-11" id="uYX-3P-C4s"/>
                                     <constraint firstAttribute="width" constant="320" id="vip-Xp-DMk"/>
                                 </constraints>
@@ -1341,20 +1340,36 @@
                                     <action selector="didTapPrivacyButton:" destination="2Dt-Hy-BfT" eventType="touchUpInside" id="U0p-wF-4r4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5M5-Wa-pgG">
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Logg inn via ID-porten">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Mk0-2Z-lkG" kind="modal" identifier="PresentIDportenOAuthModally" id="79K-FW-8nt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="5M5-Wa-pgG" firstAttribute="centerX" secondItem="cSK-Bb-kQC" secondAttribute="centerX" id="5Tt-B8-zoV" userLabel="Logg inn via ID-porten.centerX = centerX"/>
                             <constraint firstItem="ff1-dA-bBI" firstAttribute="leading" secondItem="HMF-53-tLU" secondAttribute="leading" constant="-14" id="LhG-lc-g0s"/>
                             <constraint firstAttribute="centerX" secondItem="cSK-Bb-kQC" secondAttribute="centerX" id="LpZ-C6-aeO"/>
+                            <constraint firstItem="5M5-Wa-pgG" firstAttribute="height" secondItem="GTu-hy-iNW" secondAttribute="height" id="NO1-Nn-Kni"/>
+                            <constraint firstItem="Qv1-h9-ci4" firstAttribute="top" secondItem="5M5-Wa-pgG" secondAttribute="bottom" constant="10" id="OSo-Oe-f2z"/>
                             <constraint firstAttribute="bottom" secondItem="ff1-dA-bBI" secondAttribute="bottom" id="PMQ-ix-z3L"/>
+                            <constraint firstItem="5M5-Wa-pgG" firstAttribute="top" secondItem="GTu-hy-iNW" secondAttribute="bottom" constant="15" id="Vb6-CQ-DIh"/>
                             <constraint firstAttribute="bottom" secondItem="cSK-Bb-kQC" secondAttribute="bottom" constant="183" id="Vrj-pW-d0U"/>
                             <constraint firstItem="bjv-xm-cBW" firstAttribute="centerX" secondItem="HMF-53-tLU" secondAttribute="centerX" constant="0.5" id="Wgi-JC-i89"/>
                             <constraint firstAttribute="trailing" secondItem="ff1-dA-bBI" secondAttribute="trailing" id="dp6-xd-ZsZ"/>
                             <constraint firstItem="bjv-xm-cBW" firstAttribute="trailing" secondItem="cSK-Bb-kQC" secondAttribute="trailing" constant="55" id="tXV-mh-mTc"/>
+                            <constraint firstItem="5M5-Wa-pgG" firstAttribute="leading" secondItem="cSK-Bb-kQC" secondAttribute="trailing" constant="-290" id="ttd-nu-HJP"/>
                             <constraint firstItem="cSK-Bb-kQC" firstAttribute="top" secondItem="Cli-5S-9MX" secondAttribute="bottom" constant="60" id="uRx-PE-hih"/>
                             <constraint firstItem="ff1-dA-bBI" firstAttribute="top" secondItem="Cli-5S-9MX" secondAttribute="bottom" constant="-36" id="xHq-0Z-sUz"/>
                             <constraint firstItem="bjv-xm-cBW" firstAttribute="bottom" secondItem="wTy-nL-Oqt" secondAttribute="top" id="xLP-i5-x1l"/>
+                            <constraint firstItem="5M5-Wa-pgG" firstAttribute="height" secondItem="GTu-hy-iNW" secondAttribute="height" id="z6y-u7-GGf" userLabel="Logg inn via ID-porten.height = Login Button.height"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bC4-nA-QU9"/>
@@ -1363,6 +1378,7 @@
                         <outlet property="forgotPasswordButton" destination="GK6-XJ-KCt" id="mhk-1G-IxF"/>
                         <outlet property="loginBackgroundImageView" destination="ff1-dA-bBI" id="qqy-cg-qUN"/>
                         <outlet property="loginButton" destination="GTu-hy-iNW" id="Nai-w8-tgq"/>
+                        <outlet property="loginIDportenButton" destination="5M5-Wa-pgG" id="ojg-rP-H8R"/>
                         <outlet property="loginView" destination="cSK-Bb-kQC" id="c6a-Re-bcM"/>
                         <outlet property="privacyButton" destination="bjv-xm-cBW" id="D1d-uL-b5k"/>
                         <outlet property="registerButton" destination="fv5-4n-dtY" id="51W-sj-lph"/>
@@ -1447,7 +1463,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4j-e3-7mh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="680" y="-24"/>
+            <point key="canvasLocation" x="893" y="-11"/>
         </scene>
         <!--Receipt Category View Controller-->
         <scene sceneID="iLX-VA-l4b">
@@ -1604,10 +1620,11 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="xIu-aX-Ge9"/>
+        <segue reference="79K-FW-8nt"/>
         <segue reference="eDA-DZ-Lcc"/>
-        <segue reference="WBk-6x-J5R"/>
+        <segue reference="6ll-nd-HYD"/>
         <segue reference="2IH-85-kgn"/>
-        <segue reference="nJS-Zx-WgQ"/>
+        <segue reference="WBk-6x-J5R"/>
+        <segue reference="xIu-aX-Ge9"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -50,6 +50,7 @@ NSString *const kLoginViewControllerScreenName = @"Login";
 @property (strong, nonatomic) UIImageView *titleImageView;
 @property (strong, nonatomic) IBOutlet UIButton *replayOnboardingButton;
 @property (weak, nonatomic) IBOutlet UIButton *forgotPasswordButton;
+@property (weak, nonatomic) IBOutlet UIButton *loginIDportenButton;
 
 @end
 
@@ -171,7 +172,8 @@ NSString *const kLoginViewControllerScreenName = @"Login";
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:kPresentOAuthModallyIdentifier]) {
+    if ([segue.identifier isEqualToString:kPresentOAuthModallyIdentifier] || [segue.identifier isEqualToString:kPresentIDportenOAuthModallyIdentifier]) {
+        
         SHCOAuthViewController *oAuthViewController;
         UINavigationController *navigationController = segue.destinationViewController;
 
@@ -181,10 +183,16 @@ NSString *const kLoginViewControllerScreenName = @"Login";
             oAuthViewController = (id)segue.destinationViewController;
         }
         oAuthViewController.delegate = self;
-        oAuthViewController.scope = kOauth2ScopeFull;
+        if ([segue.identifier isEqualToString:kPresentOAuthModallyIdentifier]){
+            oAuthViewController.scope = kOauth2ScopeFull;
+        }else if ([segue.identifier isEqualToString:kPresentIDportenOAuthModallyIdentifier]){
+            oAuthViewController.scope = kOauth2ScopeFull_Idporten4;
+        }
 
         [self performSelector:@selector(showLoginButtonsIfHidden) withObject:nil afterDelay:0.5];
     }
+    
+    
 }
 
 - (void)showLoginButtonsIfHidden
